@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-import { AppSidebar } from '@/components/app-sidebar'
+import { AppSidebar } from '@/app/components/app-sidebar'
 import { SidebarProvider, SidebarInset, SidebarTrigger } from '@/components/ui/sidebar'
 
 export const metadata: Metadata = { title: 'Have Elite urgent care' }
