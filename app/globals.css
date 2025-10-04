@@ -4,3 +4,17 @@
 
 :root{color-scheme:light}
 body{@apply bg-white text-slate-900}
+
+/* Remove number input spinners (Chrome/Safari/Edge/Opera) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove number input spinners (Firefox) */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
