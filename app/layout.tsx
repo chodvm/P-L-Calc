@@ -4,7 +4,7 @@ import './globals.css'
 import { AppSidebar } from './components/app-sidebar'
 import { SidebarProvider, SidebarInset, SidebarTrigger } from './components/ui/sidebar'
 
-export const metadata: Metadata = { title: 'Have Elite urgent care' }
+export const metadata: Metadata = { title: 'Have Elite Urgent Care' }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
