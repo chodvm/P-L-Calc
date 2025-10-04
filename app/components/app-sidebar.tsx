@@ -1,4 +1,3 @@
-// components/app-sidebar.tsx (keep this file)
 import {
   Sidebar, SidebarHeader, SidebarContent, SidebarFooter,
   SidebarGroup, SidebarGroupLabel, SidebarGroupContent,
