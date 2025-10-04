@@ -88,26 +88,25 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter>
+      <SidebarFooter className="p-3">
         {loading ? (
-          <div className="animate-pulse text-xs text-slate-500">Loading user…</div>
+          <div className="animate-pulse text-xs text-muted-foreground">Loading user…</div>
         ) : email ? (
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-200 text-xs font-semibold">
-              {(displayName ?? email).slice(0, 2).toUpperCase()}
-            </div>
+          <div className="flex flex-col gap-2">
             <div className="min-w-0">
-              <div className="truncate text-sm font-medium">{displayName}</div>
-              <div className="truncate text-xs text-slate-500">{email}</div>
+              <div className="truncate text-sm font-medium">{displayName ?? 'Signed in'}</div>
+              <div className="truncate text-xs text-muted-foreground">{email}</div>
               {role && (
-                <div className="mt-1 inline-flex items-center rounded-full bg-slate-200 px-2 py-0.5 text-[10px] font-medium capitalize">
+                <div className="mt-1 inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium capitalize">
                   {role}
                 </div>
               )}
             </div>
+      
+            {/* Full-width Sign out button sits at the very bottom of the sidebar footer */}
             <button
               onClick={handleSignOut}
-              className="ml-auto inline-flex h-7 items-center rounded-md border px-2 text-xs hover:bg-slate-100"
+              className="h-8 w-full rounded-md border text-xs hover:bg-slate-100"
             >
               Sign out
             </button>
@@ -116,9 +115,6 @@ export function AppSidebar() {
           <Link href="/login" className="text-sm underline">Sign in</Link>
         )}
       </SidebarFooter>
-    </Sidebar>
-  )
-}
 
 export default AppSidebar
 
