@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-+ import { AppSidebar } from './components/app-sidebar'
-+ import { SidebarProvider, SidebarInset, SidebarTrigger } from './components/ui/sidebar'
+import { AppSidebar } from './components/app-sidebar'
+import { SidebarProvider, SidebarInset, SidebarTrigger } from './components/ui/sidebar'
 
 export const metadata: Metadata = { title: 'Have Elite urgent care' }
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SidebarProvider>
           <AppSidebar />
           <SidebarInset>
-            {/* Optional tiny toggle on mobile; remove this block if you truly want none */}
+            {/* small toggle on mobile; remove if you truly want none */}
             <header className="flex h-12 items-center gap-2 border-b px-4 md:hidden">
               <SidebarTrigger />
             </header>
