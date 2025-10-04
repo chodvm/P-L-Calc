@@ -11,15 +11,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="md:flex min-h-screen">
             <MobileHeader />
             {/* Desktop sidebar */}
-            <div className="hidden md:block">
+            <div className="hidden md:block w-64 shrink-0">
               <Sidebar open />
             </div>
-            {/* Main content */}
-            <main className="flex-1 md:ml-64 p-4 md:p-8">
-              {/* Centered container */}
-              <div className="mx-auto w-full max-w-5xl">
-                {children}
-              </div>
+            <main className="flex-1 p-4 md:p-8">
+              <div className="mx-auto w-full max-w-5xl">{children}</div>
             </main>
           </div>
         </Providers>
