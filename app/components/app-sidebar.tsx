@@ -19,7 +19,7 @@ export function AppSidebar() {
 
   return (
     <Sidebar>
-      <SidebarHeader>Have Elite urgent care</SidebarHeader>
+      <SidebarHeader>Have Elite Urgent Care</SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Clinic</SidebarGroupLabel>
