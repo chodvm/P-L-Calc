@@ -4,6 +4,7 @@ export default function SettingsHub() {
   const cards = [
     { href: '/settings/fixed-costs', title: 'Fixed Costs', desc: 'Rent, insurance, loan, utilities — edit amounts & frequency' },
     { href: '/settings/labor', title: 'Labor & Staff', desc: 'Physicians and staff rates, default hours, roles, active status' },
+    { href: '/settings/revenue',     title: 'Revenue Defaults', desc: 'Average reimbursement per visit (clinic-wide)' },
   ]
 
   return (
