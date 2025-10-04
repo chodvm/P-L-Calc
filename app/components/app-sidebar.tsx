@@ -3,4 +3,4 @@ import {
   Sidebar, SidebarHeader, SidebarContent, SidebarFooter,
   SidebarGroup, SidebarGroupLabel, SidebarGroupContent,
   SidebarMenu, SidebarMenuItem, SidebarMenuButton,
-} from '@/app/components/ui/sidebar'
+} from './ui/sidebar'
