@@ -92,10 +92,6 @@ export function AppSidebar() {
         {loading ? (
           <div className="animate-pulse text-xs text-slate-500">Loading user…</div>
         ) : email ? (
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-200 text-xs font-semibold">
-              {(displayName ?? email).slice(0, 2).toUpperCase()}
-            </div>
             <div className="min-w-0">
               <div className="truncate text-sm font-medium">{displayName}</div>
               <div className="truncate text-xs text-slate-500">{email}</div>
