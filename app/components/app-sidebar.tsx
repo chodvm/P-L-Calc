@@ -92,6 +92,7 @@ export function AppSidebar() {
         {loading ? (
           <div className="animate-pulse text-xs text-slate-500">Loading user…</div>
         ) : email ? (
+          <div className="flex items-center gap-2">
             <div className="min-w-0">
               <div className="truncate text-sm font-medium">{displayName}</div>
               <div className="truncate text-xs text-slate-500">{email}</div>
