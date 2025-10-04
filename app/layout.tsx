@@ -12,9 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <SidebarProvider>
           <AppSidebar />
-
           <SidebarInset>
-            {/* small toggle only on mobile; remove if you truly want none */}
+            {/* Optional tiny toggle on mobile; remove this block if you truly want none */}
             <header className="flex h-12 items-center gap-2 border-b px-4 md:hidden">
               <SidebarTrigger />
             </header>
